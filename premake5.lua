@@ -5,8 +5,8 @@ project "glm"
     staticruntime "on"
     location "build"
 
-    targetdir ("out/build/bin/%{cfg.buildcfg}/%{prj.name}")
-    objdir    ("out/build/obj/%{cfg.buildcfg}/%{prj.name}")
+    targetdir (".Out/Bin/" .. output_dir .. "%{prj.name}")
+    objdir    (".Out/Obj/" .. output_dir .. "%{prj.name}")
 
     includedirs { "include" }
 
